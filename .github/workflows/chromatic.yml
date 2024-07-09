@@ -1,0 +1,23 @@
+name: Chromatic
+on: push
+
+permissions:
+  contents: read
+
+jobs:
+  chromatic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 8
+      - run: pnpm install
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: chromatic-build-artifacts-${{ github.run_id }}
+          path: |
+            public/baseline_image.png
