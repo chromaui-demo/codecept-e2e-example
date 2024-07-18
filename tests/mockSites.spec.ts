@@ -1,9 +1,9 @@
 import { test, expect, takeSnapshot } from '@chromatic-com/playwright';
 
-test.use({ diffThreshold: 0.3, viewport: { width: 400, height: 200 } });
+test.use({ diffThreshold: 0.3, viewport: { width: 240, height: 320 } });
 // Then use as normal 👇
 test('Vocera Loading Screen', async ({ page }, testInfo) => {
   await page.goto(
-    'https://www.flickr.com/photos/201004774@N05/53846566029/in/dateposted-public/lightbox/'
+    'https://www.flickr.com/photos/201080411@N02/53864021317/in/dateposted-public/lightbox/'
   );
 });

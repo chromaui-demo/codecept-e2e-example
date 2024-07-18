@@ -19,11 +19,11 @@ importers:
         version: 18.3.1(react@18.3.1)
     devDependencies:
       '@chromatic-com/playwright':
-        specifier: ^0.6.14
-        version: 0.6.14(@babel/preset-env@7.24.7(@babel/core@7.24.7))(@playwright/test@1.45.0)(@types/react-dom@18.3.0)(@types/react@18.3.3)(esbuild@0.21.5)(prettier@3.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.2)
+        specifier: ^0.6.16
+        version: 0.6.16(@babel/preset-env@7.24.7(@babel/core@7.24.7))(@playwright/test@1.45.0)(@types/react-dom@18.3.0)(@types/react@18.3.3)(esbuild@0.21.5)(prettier@3.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.2)
       '@chromatic-com/storybook':
         specifier: ^1.5.0
-        version: 1.6.0(@chromatic-com/playwright@0.6.14(@babel/preset-env@7.24.7(@babel/core@7.24.7))(@playwright/test@1.45.0)(@types/react-dom@18.3.0)(@types/react@18.3.3)(esbuild@0.21.5)(prettier@3.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.2))(react@18.3.1)
+        version: 1.6.0(@chromatic-com/playwright@0.6.16(@babel/preset-env@7.24.7(@babel/core@7.24.7))(@playwright/test@1.45.0)(@types/react-dom@18.3.0)(@types/react@18.3.3)(esbuild@0.21.5)(prettier@3.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.2))(react@18.3.1)
       '@playwright/test':
         specifier: ^1.45.0
         version: 1.45.0
@@ -62,7 +62,7 @@ importers:
         version: 18.3.0
       chromatic:
         specifier: ^11.5.4
-        version: 11.5.4(@chromatic-com/playwright@0.6.14(@babel/preset-env@7.24.7(@babel/core@7.24.7))(@playwright/test@1.45.0)(@types/react-dom@18.3.0)(@types/react@18.3.3)(esbuild@0.21.5)(prettier@3.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.2))
+        version: 11.5.4(@chromatic-com/playwright@0.6.16(@babel/preset-env@7.24.7(@babel/core@7.24.7))(@playwright/test@1.45.0)(@types/react-dom@18.3.0)(@types/react@18.3.3)(esbuild@0.21.5)(prettier@3.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.2))
       eslint:
         specifier: ^8
         version: 8.57.0
@@ -770,8 +770,8 @@ packages:
   '@base2/pretty-print-object@1.0.1':
     resolution: {integrity: sha512-4iri8i1AqYHJE2DstZYkyEprg6Pq6sKx3xn5FpySk9sNhH7qN2LLlHJCfDTZRILNwQNPD7mATWM0TBui7uC1pA==}
 
-  '@chromatic-com/playwright@0.6.14':
-    resolution: {integrity: sha512-mtN0pMr3yMvxknZ42nhEwjTubIO34IsCCnE62NrTYobcRKPdYVeP13LL5nxNpgmFyaruF4zIe079/WJQNXz7Hg==}
+  '@chromatic-com/playwright@0.6.16':
+    resolution: {integrity: sha512-R007q2vQkvWcmRvxmprcXcEoJ6IJpywF9gMwt4GWnNjCnX4/Fq+tjl6JKCMsdhFPQTQS4ZlhXnTuy62OSUL8hQ==}
     hasBin: true
     peerDependencies:
       '@playwright/test': ^1.0.0
@@ -6612,7 +6612,7 @@ snapshots:
 
   '@base2/pretty-print-object@1.0.1': {}
 
-  '@chromatic-com/playwright@0.6.14(@babel/preset-env@7.24.7(@babel/core@7.24.7))(@playwright/test@1.45.0)(@types/react-dom@18.3.0)(@types/react@18.3.3)(esbuild@0.21.5)(prettier@3.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.2)':
+  '@chromatic-com/playwright@0.6.16(@babel/preset-env@7.24.7(@babel/core@7.24.7))(@playwright/test@1.45.0)(@types/react-dom@18.3.0)(@types/react@18.3.3)(esbuild@0.21.5)(prettier@3.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.2)':
     dependencies:
       '@playwright/test': 1.45.0
       '@segment/analytics-node': 1.3.0
@@ -6641,9 +6641,9 @@ snapshots:
       - utf-8-validate
       - webpack-cli
 
-  '@chromatic-com/storybook@1.6.0(@chromatic-com/playwright@0.6.14(@babel/preset-env@7.24.7(@babel/core@7.24.7))(@playwright/test@1.45.0)(@types/react-dom@18.3.0)(@types/react@18.3.3)(esbuild@0.21.5)(prettier@3.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.2))(react@18.3.1)':
+  '@chromatic-com/storybook@1.6.0(@chromatic-com/playwright@0.6.16(@babel/preset-env@7.24.7(@babel/core@7.24.7))(@playwright/test@1.45.0)(@types/react-dom@18.3.0)(@types/react@18.3.3)(esbuild@0.21.5)(prettier@3.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.2))(react@18.3.1)':
     dependencies:
-      chromatic: 11.5.4(@chromatic-com/playwright@0.6.14(@babel/preset-env@7.24.7(@babel/core@7.24.7))(@playwright/test@1.45.0)(@types/react-dom@18.3.0)(@types/react@18.3.3)(esbuild@0.21.5)(prettier@3.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.2))
+      chromatic: 11.5.4(@chromatic-com/playwright@0.6.16(@babel/preset-env@7.24.7(@babel/core@7.24.7))(@playwright/test@1.45.0)(@types/react-dom@18.3.0)(@types/react@18.3.3)(esbuild@0.21.5)(prettier@3.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.2))
       filesize: 10.1.2
       jsonfile: 6.1.0
       react-confetti: 6.1.0(react@18.3.1)
@@ -9361,9 +9361,9 @@ snapshots:
 
   chownr@2.0.0: {}
 
-  chromatic@11.5.4(@chromatic-com/playwright@0.6.14(@babel/preset-env@7.24.7(@babel/core@7.24.7))(@playwright/test@1.45.0)(@types/react-dom@18.3.0)(@types/react@18.3.3)(esbuild@0.21.5)(prettier@3.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.2)):
+  chromatic@11.5.4(@chromatic-com/playwright@0.6.16(@babel/preset-env@7.24.7(@babel/core@7.24.7))(@playwright/test@1.45.0)(@types/react-dom@18.3.0)(@types/react@18.3.3)(esbuild@0.21.5)(prettier@3.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.2)):
     optionalDependencies:
-      '@chromatic-com/playwright': 0.6.14(@babel/preset-env@7.24.7(@babel/core@7.24.7))(@playwright/test@1.45.0)(@types/react-dom@18.3.0)(@types/react@18.3.3)(esbuild@0.21.5)(prettier@3.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.2)
+      '@chromatic-com/playwright': 0.6.16(@babel/preset-env@7.24.7(@babel/core@7.24.7))(@playwright/test@1.45.0)(@types/react-dom@18.3.0)(@types/react@18.3.3)(esbuild@0.21.5)(prettier@3.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.2)
 
   chrome-trace-event@1.0.4: {}
 
