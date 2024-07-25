@@ -1,24 +1,37 @@
 import React from 'react';
 import Image from 'next/image';
 
-export const Images: React.FC = () => {
+interface ImagesProps {
+  filePath: string;
+  ignoreRegions?: Array<{
+    top: number;
+    width: number;
+    height: number;
+    left?: number;
+  }>;
+}
+
+export const Images: React.FC<ImagesProps> = ({
+  filePath = '',
+  ignoreRegions = [],
+}) => {
   return (
     <div>
-      <div
-        style={{
-          background: 'black',
-          width: '240px',
-          height: '15px',
-          position: 'absolute',
-          zIndex: 1000,
-        }}
-      ></div>
-      <Image
-        src="./test_run_success.png"
-        alt="baseline_image"
-        width={240}
-        height={320}
-      />
+      {ignoreRegions.map((region) => (
+        <div
+          key={region.top}
+          style={{
+            background: 'black',
+            width: region.width,
+            height: region.height,
+            position: 'absolute',
+            top: region.top,
+            left: region.left || 0,
+            zIndex: 1000,
+          }}
+        ></div>
+      ))}
+      <Image src={filePath} alt="baseline_image" width={240} height={320} />
     </div>
   );
 };

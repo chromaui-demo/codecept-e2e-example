@@ -18,9 +18,48 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Primary: Story = {
+export const Splash: Story = {
   args: {
-    primary: true,
-    label: 'Images',
+    filePath: './baseline_image.png',
+    ignoreRegions: [{ top: 0, width: 240, height: 15 }],
+  },
+};
+
+export const MessagesIgnoreTitleAndTime: Story = {
+  args: {
+    filePath: './message_event_baseline.png',
+    ignoreRegions: [
+      { top: 0, width: 240, height: 15 },
+      { top: 30, width: 240, height: 30 },
+      { top: 105, width: 240, height: 30 },
+      { top: 175, width: 240, height: 30 },
+      { top: 250, width: 240, height: 30 },
+    ],
+  },
+};
+
+export const MessagesIgnoreCompleteMessage: Story = {
+  args: {
+    filePath: './message_event_test_run_success.png',
+    ignoreRegions: [
+      { top: 0, width: 240, height: 15 },
+      { top: 20, width: 240, height: 50 },
+      { top: 95, width: 240, height: 50 },
+      { top: 170, width: 240, height: 50 },
+      { top: 245, width: 240, height: 50 },
+    ],
+  },
+};
+
+export const MessagesIgnoreOnlyTime: Story = {
+  args: {
+    filePath: './message_event_test_run_success.png',
+    ignoreRegions: [
+      { top: 0, width: 240, height: 15 },
+      { top: 20, width: 50, height: 20, left: 190 },
+      { top: 95, width: 50, height: 20, left: 190 },
+      { top: 165, width: 50, height: 20, left: 190 },
+      { top: 240, width: 50, height: 20, left: 190 },
+    ],
   },
 };
