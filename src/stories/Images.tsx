@@ -14,7 +14,7 @@ export const Images: React.FC = () => {
         }}
       ></div>
       <Image
-        src="./baseline_image.png"
+        src="./test_run_failure_2.png"
         alt="baseline_image"
         width={240}
         height={320}
