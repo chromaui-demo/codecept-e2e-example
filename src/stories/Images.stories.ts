@@ -43,23 +43,23 @@ export const MessagesIgnoreCompleteMessage: Story = {
     filePath: './message_test_run_failure_1.png',
     ignoreRegions: [
       { top: 0, width: 240, height: 15 },
-      { top: 20, width: 240, height: 50 },
-      { top: 95, width: 240, height: 50 },
-      { top: 170, width: 240, height: 50 },
-      { top: 245, width: 240, height: 50 },
+      { top: 20, width: 240, height: 60 },
+      { top: 95, width: 240, height: 60 },
+      { top: 170, width: 240, height: 60 },
+      { top: 245, width: 240, height: 60 },
     ],
   },
 };
 
 export const MessagesIgnoreOnlyTime: Story = {
   args: {
-    filePath: './message_event_test_run_baseline.png',
+    filePath: './message_event_baseline.png',
     ignoreRegions: [
       { top: 0, width: 240, height: 15 },
-      { top: 20, width: 50, height: 20, left: 190 },
-      { top: 95, width: 50, height: 20, left: 190 },
-      { top: 165, width: 50, height: 20, left: 190 },
-      { top: 240, width: 50, height: 20, left: 190 },
+      { top: 20, width: 50, height: 30, left: 190 },
+      { top: 95, width: 50, height: 30, left: 190 },
+      { top: 165, width: 50, height: 30, left: 190 },
+      { top: 240, width: 50, height: 30, left: 190 },
     ],
   },
 };
