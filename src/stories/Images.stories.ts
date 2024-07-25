@@ -27,7 +27,7 @@ export const Splash: Story = {
 
 export const MessagesIgnoreTitleAndTime: Story = {
   args: {
-    filePath: './message_event_baseline.png',
+    filePath: './message_test_run_failure_2.png',
     ignoreRegions: [
       { top: 0, width: 240, height: 15 },
       { top: 30, width: 240, height: 30 },
@@ -40,7 +40,7 @@ export const MessagesIgnoreTitleAndTime: Story = {
 
 export const MessagesIgnoreCompleteMessage: Story = {
   args: {
-    filePath: './message_event_test_run_success.png',
+    filePath: './message_test_run_failure_1.png',
     ignoreRegions: [
       { top: 0, width: 240, height: 15 },
       { top: 20, width: 240, height: 50 },
@@ -53,7 +53,7 @@ export const MessagesIgnoreCompleteMessage: Story = {
 
 export const MessagesIgnoreOnlyTime: Story = {
   args: {
-    filePath: './message_event_test_run_success.png',
+    filePath: './message_event_test_run_baseline.png',
     ignoreRegions: [
       { top: 0, width: 240, height: 15 },
       { top: 20, width: 50, height: 20, left: 190 },
