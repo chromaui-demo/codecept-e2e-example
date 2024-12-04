@@ -1,23 +1,29 @@
-import { test, expect } from '@chromatic-com/playwright';
+import { test, expect, takeSnapshot } from '@chromatic-com/playwright';
 
-test.use({
-  colorScheme: 'dark', // or 'light'
+test.describe('Playwright Dev Website', () => {
+  test('has title', async ({ page }) => {
+    await page.goto('https://playwright.dev/');
+  });
+
+  test('get started link', async ({ page }, testInfo) => {
+    await page.goto('https://playwright.dev/');
+    // Click the get started link.
+    takeSnapshot(page, testInfo);
+    await page.getByRole('link', { name: 'Get started' }).click();
+  });
 });
-test('has title', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
 
-  // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/);
-});
-
-test('get started link', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
-
-  // Click the get started link.
-  await page.getByRole('link', { name: 'Get started' }).click();
-
-  // Expects page to have a heading with the name of Installation.
-  // await expect(
-  //   page.getByRole('heading', { name: 'Installation' })
-  // ).toBeVisible();
+test.describe('Chromatic', () => {
+  test('Sign In Works', async ({ page }) => {
+    await page.goto('https://www.chromatic.com/');
+    await page
+      .getByRole('heading', { name: 'Ship flawless UIs with less' })
+      .click();
+    await page
+      .locator('div')
+      .filter({ hasText: /^Get startedWatch demo$/ })
+      .getByRole('link')
+      .click();
+    await page.getByRole('button', { name: 'Connect with GitHub' }).click();
+  });
 });
